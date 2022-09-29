@@ -21,10 +21,10 @@
 {
 	setlocale(LC_ALL, "rus");
 	int yeas;
-	printf("Введите год: \n");
+	printf("Р’РІРµРґРёС‚Рµ РіРѕРґ: \n");
 	scanf("%d", &yeas);
-	if (((yeas % 4 == 0) && (yeas % 100 != 0)) || (yeas % 400 == 0)) printf("Год %d високосный", yeas);
-	else printf("Год %d не високосный", yeas);
+	if (((yeas % 4 == 0) && (yeas % 100 != 0)) || (yeas % 400 == 0)) printf("Р“РѕРґ %d РІРёСЃРѕРєРѕСЃРЅС‹Р№", yeas);
+	else printf("Р“РѕРґ %d РЅРµ РІРёСЃРѕРєРѕСЃРЅС‹Р№", yeas);
 
 } */
 
@@ -32,13 +32,13 @@
  {
 	 /*float x, z;
 	 setlocale(LC_ALL, "rus");
-	 printf("Введите x: \n");
+	 printf("Р’РІРµРґРёС‚Рµ x: \n");
 	 scanf("%f", &x);
 	 z = fun(x);
-	 printf("Ответ = %.3f", z);*/
+	 printf("РћС‚РІРµС‚ = %.3f", z);*/
 	 /*char c;
 	 setlocale(LC_ALL, "rus");
-	 printf("Введите символ:");
+	 printf("Р’РІРµРґРёС‚Рµ СЃРёРјРІРѕР»:");
 	 scanf("%c", &c);
 	 switch (c)
 	 {
@@ -49,7 +49,7 @@
 		case 'e':
 		case 'f':
 		case 'g':
-			printf("Введена буква.\n");
+			printf("Р’РІРµРґРµРЅР° Р±СѓРєРІР°.\n");
 			break;
 		case '1':
 		case '2':
@@ -61,43 +61,43 @@
 		case '8':
 		case '9':
 		case '0':
-			printf("Введена цифра.\n");
+			printf("Р’РІРµРґРµРЅР° С†РёС„СЂР°.\n");
 			break;
 		
 		default:
-			printf("Неизвестный символ.\n");		
+			printf("РќРµРёР·РІРµСЃС‚РЅС‹Р№ СЃРёРјРІРѕР».\n");		
 	 }
 	 return 0;*/
 
 	 int x;
 	 setlocale(LC_ALL, "rus");
-	 printf("Введите месяц: \n");
+	 printf("Р’РІРµРґРёС‚Рµ РјРµСЃСЏС†: \n");
 	 scanf("%d", &x);
 	 switch (x) 
 	 {
 	 case 1:
 	 case 2:
 	 case 12:
-		 printf("Введеный месяц: Зима");
+		 printf("Р’РІРµРґРµРЅС‹Р№ РјРµСЃСЏС†: Р—РёРјР°");
 		 break;
 	 case 3:
 	 case 4:
 	 case 5:
-		 printf("Введеный месяц: Весна");
+		 printf("Р’РІРµРґРµРЅС‹Р№ РјРµСЃСЏС†: Р’РµСЃРЅР°");
 		 break;
 	 case 6:
 	 case 7:
 	 case 8:
-		 printf("Введеный месяц: Лето");
+		 printf("Р’РІРµРґРµРЅС‹Р№ РјРµСЃСЏС†: Р›РµС‚Рѕ");
 		 break;
 	 case 9:
 	 case 10:
 	 case 11:
-		 printf("Введеный месяц: Осень");
+		 printf("Р’РІРµРґРµРЅС‹Р№ РјРµСЃСЏС†: РћСЃРµРЅСЊ");
 		 break;
 
 	 default:
-		 printf("Неизвестный месяц.\n");
+		 printf("РќРµРёР·РІРµСЃС‚РЅС‹Р№ РјРµСЃСЏС†.\n");
 
 	 }
 	
