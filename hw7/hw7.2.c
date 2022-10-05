@@ -8,7 +8,7 @@ int main()
 	float x, y;
 	char z;
 	setlocale(LC_ALL, "rus");
-	printf("Введите пример вводя каждый символ отдельно: \n");
+	printf("Введите пример: \n");
 	scanf("%f%c%f",&x,&z,&y);
 	switch (z)
 	{
