@@ -103,3 +103,58 @@
 	
 	 return 0;
  }
+#define _CRT_SECURE_NO_DEPRECATE
+#include <stdio.h>
+#include <locale.h>
+#include <math.h>
+#define PI 3.14159265358979323846
+
+float cosin(float x)
+{
+	return (pow(x, 2) + 2 * PI * cos(PI * x));
+}
+ 
+
+ void main()
+{
+	 /*int x;
+	 char c,b;
+	 setlocale(LC_ALL, "rus");
+	 printf("Введите первый символ: \n");
+	 scanf("%c", &c); 
+	 getchar();
+	 printf("Введите второй символ: \n");
+	 scanf("%c", &b);
+	 getchar();
+	 printf("Введите кол-во символов: \n");
+	 scanf("%d",&x);
+	 printf("+");
+	 for (int start = 1; start <= x/2; start++) printf("%c",c);
+	 for (int start = x / 2; start <= x; start++) printf("%c",b);
+	 printf("+");*/
+	 
+	 /* int n, m, s = 0;
+	 setlocale(LC_ALL, "rus");
+	 printf("Введите m и n: \n");
+	 scanf(" %d", &m);
+	 scanf(" %d", &n);
+	 for (int c = 0; m <= n; ++c,s += m, ++m);
+	 printf("результат %d", s);*/
+
+	 float y,x = 0.1;
+	 setlocale(LC_ALL, "rus");
+	 printf("y = x^2 + 2*PI*cos(PI*x)\n");
+	 printf("Введите шаг табуляции: \n");
+	 scanf("%f", &y);
+	
+	 printf("__________________\n");
+	 printf("|   x  |   F(x)  |\n");
+	 for (;  x <= 2.5-y; x += y)
+	 {
+		 printf("|%6.3f|%9.5f|   ", x, cosin(x));
+		 printf("|%6.3f|%9.5f|\n", x+y, cosin(x+y));
+	 }
+
+}
+
+
